@@ -78,3 +78,21 @@
   display: block;
   text-align: center;
 }
+
+@media all and (min-width: 768px) {
+  /* HEADER */
+
+  .header-container .wrapper {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* MAIN */
+
+  .main .main-title {
+    font-size: 40px;
+  }
+}

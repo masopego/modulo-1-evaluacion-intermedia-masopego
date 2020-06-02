@@ -7,3 +7,45 @@
   padding: 0px;
   font-family: "Rubik", sans-serif;
 }
+
+:root {
+  --color-text: #4a4a4a;
+  --color-background: #3cdbc0;
+  --color-claim: #ffffff;
+}
+
+/* HEADER */
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  background-color: var(--color-claim);
+  z-index: 3;
+}
+
+.header-container .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu ul li {
+  text-transform: uppercase;
+  padding: 0;
+  display: inline-block;
+}
+
+/* MAIN */
+
+.main {
+  height: 100vh;
+  padding-top: 100px;
+  overflow: scroll;
+  background-color: var(--color-background);
+  position: relative;
+}
+.main .main-title {
+  text-transform: capitalize;
+  color: var(--color-claim);
+  position: absolute;
+  z-index: 2;
+}

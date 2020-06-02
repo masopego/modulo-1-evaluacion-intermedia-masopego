@@ -26,12 +26,35 @@
 .header-container .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/*Imagen*/
+
+.header-container .wrapper .logo-item {
+  width: 155px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.header-container .wrapper .logo-item img {
+  width: 100%;
+}
+
+/*Menú de Navegación*/
 .header-menu ul li {
-  text-transform: uppercase;
-  padding: 0;
   display: inline-block;
+  padding-left: 0;
+  padding-bottom: 13px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.header-menu ul li:nth-child(1) {
+  padding-right: 20px;
 }
 
 /* MAIN */
@@ -39,12 +62,12 @@
 .main {
   height: 100vh;
   padding-top: 100px;
-  overflow: scroll;
   background-color: var(--color-background);
   position: relative;
 }
 .main .main-title {
   text-transform: capitalize;
+  font-size: 30px;
   color: var(--color-claim);
   position: absolute;
   z-index: 2;

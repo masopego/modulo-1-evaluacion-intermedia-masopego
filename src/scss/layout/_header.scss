@@ -1,0 +1,47 @@
+/* HEADER */
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  background-color: $color-claim;
+  z-index: 3;
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    /*Imagen*/
+    & .logo-item {
+      width: 155px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0px;
+
+      & img {
+        width: 100%;
+      }
+    }
+    /*Menú de Navegación*/
+    & .header-menu ul li {
+      display: inline-block;
+      padding-left: 0;
+      padding-bottom: 13px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $color-text;
+    }
+    & li:nth-child(1) {
+      padding-right: 16px;
+    }
+  }
+}

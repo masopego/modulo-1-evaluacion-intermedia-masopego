@@ -1,0 +1,28 @@
+/* MAIN */
+
+.main {
+  height: 100vh;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 118px;
+
+  & .main-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: $color-claim;
+    z-index: 2;
+
+    @media all and (min-width: 768px) {
+      font-size: 40px;
+    }
+
+    & span {
+      display: block;
+      text-align: center;
+    }
+  }
+}
